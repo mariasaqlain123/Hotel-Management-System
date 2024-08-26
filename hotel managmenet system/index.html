@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Hotel</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__bar">
+            <div class="nav__header">
+                <div class="logo nav__logo">
+                    <div>H</div>
+                    <span>Maria's<br />Hotel</span>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#room">Rooms</a></li>
+                <li><a href="#portfolio">Portfolio</a></li> <!-- Added Portfolio Link -->
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+        <div class="section__container header__container">
+            <p class="section__subheader">ABOUT US</p>
+            <h1>Discover Your Home<br />Away From Home</h1>
+            <button class="btn">Take A Tour</button>
+        </div>
+    </header>
+
+    <section class="booking">
+        <div class="section__container booking__container">
+            <form id="reservationForm">
+                <div class="input__group">
+                    <label for="arrival">Arrival Date</label>
+                    <input type="date" id="arrival" required />
+                </div>
+                <div class="input__group">
+                    <label for="departure">Departure Date</label>
+                    <input type="date" id="departure" required />
+                </div>
+                <div class="input__group">
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" placeholder="No Of Guests" min="1" required />
+                </div>
+                <button type="submit" class="btn">Check Availability</button>
+            </form>
+            <div id="availableRooms" class="room-list"></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section__container about__container">
+            <div class="about__grid">
+                <div class="about__image">
+                    <img src="./about-1" alt="about" />
+                </div>
+                <div class="about__card">
+                    <span><i class="ri-user-line"></i></span>
+                    <h4>Strong Team</h4>
+                    <p>Unlocking Hospitality Excellence And Ensures Your Perfect Stay</p>
+                </div>
+                <div class="about__image">
+                    <img src="./5-Star-2.jpg" alt="about" />
+                </div>
+                <div class="about__image">
+                    <img src="./luxor room.jpg" alt="about" />
+                    <h4>Luxury Room</h4>
+                    <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+                </div>
+            </div>
+            <div class="about__content">
+                <p class="section__subheader">ABOUT US</p>
+                <h2 class="section__header">Discover Our Underground</h2>
+                <p class="section__description">
+                    Welcome to a hidden realm of extraordinary accommodations where luxury, comfort, and adventure converge.
+                </p>
+                <button class="btn">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="room__container" id="room">
+        <p class="section__subheader">ROOMS</p>
+        <h2 class="section__header">Hand Picked Rooms</h2>
+        <div class="room__grid">
+            <div class="room__card">
+                <img src="./Deluxe room.jpg" alt="room" />
+                <div class="room__card__details">
+                    <div>
+                        <h4>Deluxe Suite</h4>
+                        <p>Well-appointed rooms designed for guests who desire a more.</p>
+                    </div>
+                    <h3>$399<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room__card">
+                <img src="./family suite.jpg" alt="room" />
+                <div class="room__card__details">
+                    <div>
+                        <h4>Family Suite</h4>
+                        <p>Consist of multiple rooms and a common living area.</p>
+                    </div>
+                    <h3>$599<span>/night</span></h3>
+                </div>
+            </div>
+            <div class="room__card">
+                <img src="./Como-Residences-Penthouse-Nakheel-3.jpg" alt="room" />
+                <div class="room__card__details">
+                    <div>
+                        <h4>Luxury Penthouse</h4>
+                        <p>
+                            Top-tier accommodations usually on the highest floors of a hotel.
+                        </p>
+                    </div>
+                    <h3>$799<span>/night</span></h3>
+                </div>
+            </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="section__container">
+            <h2 class="section__header">My Projects</h2>
+            <div class="projects">
+                <div class="project" data-project="1">
+                    <h4>Personal Portfolio Website</h4>
+                    <p>A personal portfolio to showcase my skills and projects.</p>
+                </div>
+                <div class="project" data-project="2">
+                    <h4>Hotel Reservation System</h4>
+                    <p>A system for users to search and book hotel rooms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo footer__logo">
+                    <div>H</div>
+                    <span>Maria's<br />Hotel</span>
+                </div>
+                <p class="section__description">Experience unparalleled comfort and luxury at Maria's Hotel, where every stay feels like a home away from home. Indulge in exquisite dining and world-class amenities, all set against the backdrop of breathtaking views.</p>
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <div class="footer__links">
+                    <li><a href="#">Online Booking</a></li>
+                    <li><a href="#">Room Customization</a></li>
+                    <li><a href="#">Virtual Tours</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Concierge Services</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <div class="footer__links">
+                    <li>
+                        <span><i class="ri-phone-fill"></i></span>
+                        <div>
+                            <h5>Phone Number</h5>
+                            <p>+92 12345678910</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-record-mail-line"></i></span>
+                        <div>
+                            <h5>Email</h5>
+                            <p>@mariasaqlain</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span><i class="ri-map-pin-2-fill"></i></span>
+                        <div>
+                            <h5>Location</h5>
+                            <p>XYZ</p>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bar">Copyright © 2023 Web Design Mastery. All rights reserved.</div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+        // JavaScript for Reservation System
+        document.getElementById('reservationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const arrival = document.getElementById('arrival').value;
+            const departure = document.getElementById('departure').value;
+            const guests = document.getElementById('guests').value;
+
+            // Simulated room data
+            const rooms = [
+                { id: 1, type: 'Deluxe Suite', price: 399 },
+                { id: 2, type: 'Family Suite', price: 599 },
+                { id: 3, type: 'Luxury Penthouse', price: 799 }
+            ];
+
+            const availableRoomsDiv = document.getElementById('availableRooms');
+            availableRoomsDiv.innerHTML = ''; // Clear previous results
+
+            rooms.forEach(room => {
+                const roomDiv = document.createElement('div');
+                roomDiv.className = 'room';
+                roomDiv.innerHTML = `
+                    <h4>${room.type}</h4>
+                    <p>Price: $${room.price} per night</p>
+                    <button onclick="bookRoom(${room.id})">Book Now</button>
+                `;
+                availableRoomsDiv.appendChild(roomDiv);
+            });
+        });
+
+        function bookRoom(roomId) {
+            alert(`Room ${roomId} has been booked!`);
+        }
+
+        // Existing JavaScript for Menu Toggle and ScrollReveal
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.getElementById("nav-links");
+        const menuBtnIcon = menuBtn.querySelector("i");
+
+        menuBtn.addEventListener("click", (e) => {
+            navLinks.classList.toggle("open");
+            const isOpen = navLinks.classList.contains("open");
+            menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+        });
+
+        navLinks.addEventListener("click", (e) => {
+            navLinks.classList.remove("open");
+            menuBtnIcon.setAttribute("class", "ri-menu-line");
+        });
+
+        const scrollRevealOption = {
+            distance: "50px",
+            origin: "bottom",
+            duration: 1000,
+        };
+
+        ScrollReveal().reveal(".header__container .section__subheader", { ...scrollRevealOption });
+        ScrollReveal().reveal(".header__container h1", { ...scrollRevealOption, delay: 500 });
+        ScrollReveal().reveal(".header__container .btn", { ...scrollRevealOption, delay: 1000 });
+        ScrollReveal().reveal(".room__card", { ...scrollRevealOption, interval: 500 });
+        ScrollReveal().reveal(".feature__card", { ...scrollRevealOption, interval: 500 });
+        ScrollReveal().reveal(".news__card", { ...scrollRevealOption, interval: 500 });
+    </script>
+</body>
+</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  </body>
+</html>
